@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/homepage")
+@RequestMapping("/")
 public class HomeController {
     @GetMapping
     public void showHomePage(HttpServletResponse response) throws IOException {
