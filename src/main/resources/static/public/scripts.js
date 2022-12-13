@@ -11,7 +11,7 @@ $(document).ready(() => {
         method = 'GET', 
         data = null
     ) => {
-        let baseUrl = 'http://localhost:8080/api/post'
+        let baseUrl = 'https://589d-2804-d49-4d44-e00-d04a-9329-5c54-3bc5.sa.ngrok.io/api/post' //'http://localhost:8080/api/post'
         url = url ? `${baseUrl}/${url}` : baseUrl 
         
         $.ajax({
@@ -106,4 +106,6 @@ $(document).ready(() => {
     }
 
     reload()
+
+    setInterval(() => reload(), 2000)
 })
